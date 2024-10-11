@@ -8,7 +8,7 @@
 declarative package manager for Arch Linux
 
 ## Installation
-`pacdef` is available in the AUR [as stable release](https://aur.archlinux.org/packages/pacdef) or [development version](https://aur.archlinux.org/packages/pacdef-git).
+`pacdef` is available in the AUR [as stable release](https://aur.archlinux.org/packages/pacdef-python).
 
 ## Use-case
 `pacdef` allows the user to have consistent packages among multiple Arch machines by managing packages in group files.
@@ -50,7 +50,7 @@ This tree shows my pacdef repository (not the `pacdef` config dir).
 * Under `hosts` I have one file for each machine I use. The filenames match the corresponding hostname. The packages
   are specific to one machine only, like device drivers, or any programs I use exclusively on that machine.
 
-Usage on different machines: 
+Usage on different machines:
 * home server: `base private hostname_a`
 * private PC: `audio base desktop private rust wayland hostname_b`
 * work PC: `base desktop rust work xorg hostname_c`
@@ -76,7 +76,7 @@ aur_helper = paru
 ```
 
 ### package group files
-1. One package per line. 
+1. One package per line.
 2. Anything after a `#` is ignored.
 3. Empty lines are ignored.
 4. If a package exists in multiple repositories, the repo can be specified as prefix followed by a forward slash.
